@@ -14,7 +14,7 @@ let baseUrl = 'http://192.168.8.34:8080/api'
 let filePath = 'utils/request.js';
 
 if(ENV === 'prod' || ENV === 'build'){
-    baseUrl = 'http://gameadmin.pottingmob.com:8001/api'
+    baseUrl = 'http://test.com:8001/api'
 }
 
 if(API_URL.length>5){
