@@ -176,5 +176,15 @@ export function uploadimg(element, url) {
   // }
 }
 
+//js下载json
+export function jsdownload(json_data, name='tmp.json'){
+    var datastr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(json_data));
+    var downloadAnchorNode = document.createElement('a')
+    downloadAnchorNode.setAttribute("href", datastr);
+    downloadAnchorNode.setAttribute("download", name);
+    downloadAnchorNode.click();
+    downloadAnchorNode.remove();
+}
+
 
 
